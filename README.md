@@ -9,7 +9,7 @@ This project focuses on understanding the basics of **HTML structure and CSS sty
 ## techologies Used:html,css
 
 
-## Demo video:https://drive.google.com/file/d/1h059wGb-Sa4AoC_uvVwPtM_cmQWweH75/view?usp=drive_link
+## Demo video:https://drive.google.com/file/d/13W3UFM0jQZHfpVIcy26rqrVVvGSimpbF/view?usp=drive_link
 
 
 
