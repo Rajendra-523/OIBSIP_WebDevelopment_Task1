@@ -1,201 +1,163 @@
-# OIBSIP Web Development Task 1 - Landing Page
+# OIBSIP Web Development Task 1
 
-This project is a simple landing page developed using **HTML5** and **CSS3** as part of the **Oasis Infobyte Web Development and Designing Internship**. The purpose of this task is to understand how a basic website layout is created by combining page structure in HTML with styling in CSS.
+## Landing Page Project
+
+This project is a simple and clean **landing page** created using **HTML** and **CSS** as part of the **Oasis Infobyte Web Development Internship**. The main goal of this task is to understand how a webpage is structured with HTML and how it is styled using CSS to create an attractive user interface.
+
+The website is designed for a sample brand named **CodeLift**. It includes a navigation bar, a hero section, service cards, and a footer. This project is suitable for beginners who want to practice the basics of frontend web development.
 
 ## Author Details
 
-- **Name:** BURLAGADDA RAJENDRA
-- **Internship Program:** Oasis Infobyte
-- **Task:** Web Development and Designing - Task 1
-- **Project Type:** Landing Page
-- **Technologies Used:** HTML, CSS
+- **Name:** BURLAGADAA RAJENDRA
+- **Internship:** Oasis Infobyte
+- **Domain:** Web Development and Designing
+- **Task:** Level 1 - Task 1
 
-## Project Description
+## Technologies Used
 
-This landing page is built for a sample website called **CodeLift**. It is designed to present a clean and beginner-friendly webpage layout. The project demonstrates how different sections of a webpage can be arranged and styled properly without using JavaScript or any front-end framework.
+- **HTML5** for the structure of the webpage
+- **CSS3** for styling and layout design
 
-The page contains a top navigation area, a hero section with a heading and button, a set of feature cards, and a footer. This makes it a good practice project for learning the basics of front-end web design.
+## Project Structure
 
-## Objective of the Task
-
-The main objective of this project is to practice:
-
-- Creating webpage structure using HTML
-- Applying styles using CSS
-- Organizing content into sections
-- Using colors, spacing, and alignment effectively
-- Building a neat and readable landing page layout
-
-## Files Included
-
-The project consists of the following files:
-
-- `index.html` - contains the full structure of the landing page
-- `style.css` - contains all design and layout styles
-- `README.md` - contains the project explanation and documentation
+- `index.html` - Contains the complete structure and content of the landing page
+- `style.css` - Contains all the styles used for layout, colors, spacing, and design
+- `README.md` - Contains the project explanation and details
 
 ## HTML Explanation
 
-The `index.html` file defines the content and structure of the webpage. It is divided into several sections:
+The `index.html` file defines the structure of the landing page. It is divided into several important sections:
 
-### 1. Head Section
+### 1. Document Setup
 
-The head section includes:
+The file starts with the `<!DOCTYPE html>` declaration, which tells the browser that the document uses HTML5. Inside the `<head>` section:
 
-- Character encoding using `UTF-8`
-- Responsive viewport settings
-- Page title as `CodeLift`
-- External stylesheet linking through `style.css`
-
-This ensures that the webpage is properly displayed in the browser and connected to the CSS file.
+- `<meta charset="UTF-8">` sets the character encoding
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">` helps the page scale properly on different screen sizes
+- `<title>CodeLift</title>` sets the page title shown in the browser tab
+- `<link rel="stylesheet" href="style.css">` connects the external CSS file
 
 ### 2. Navigation Bar
 
-The navigation bar appears at the top of the page. It contains:
+The `<nav>` section creates the top navigation bar. It includes:
 
-- A logo text: **CodeLift**
-- Menu links: **Home**, **About**, **Services**, and **Contact**
+- A logo area with the text **CodeLift**
+- A menu with links such as **Home**, **About**, **Services**, and **Contact**
 
-This section gives the page a professional website header and helps represent a real landing page structure.
+This section gives the page a professional header and helps users understand the basic layout of a website.
 
 ### 3. Hero Section
 
-The hero section is the main introduction area of the page. It contains:
+The hero section is created using:
 
-- A heading: **Welcome to CodeLift**
-- A short line: **Build, Learn and Grow with Web Development**
-- A button: **Get Started**
+- A main heading: **Welcome to CodeLift**
+- A short paragraph: **Build, Learn and Grow with Web Development**
+- A call-to-action button: **Get Started**
 
-This section is used to attract the user's attention and give a quick introduction to the website.
+This is the main attention-grabbing part of the landing page. It introduces the theme of the website and provides a clear first impression.
 
-### 4. Feature Card Section
+### 4. Cards Section
 
-This section contains three cards placed inside a container. Each card highlights one topic:
+The project contains a `<section class="container">` with three cards. Each card highlights a key area:
 
-- **Web Design** - Create modern responsive websites
-- **Development** - Build fast and scalable applications
-- **Learning** - Improve coding skills with projects
+- **Web Design**
+- **Development**
+- **Learning**
 
-This layout shows how content can be grouped in boxes to make the page more organized and visually appealing.
+These cards are useful for presenting services or important topics in a neat and organized way.
 
 ### 5. Footer
 
-The footer is placed at the bottom of the page and completes the webpage layout. It contains:
-
-- `(c) 2026 CodeLift. All Rights Reserved`
-
-The footer adds a final finishing section to the landing page.
+The `<footer>` section is placed at the bottom of the page. It contains a copyright message for the website. This gives the page a complete and finished look.
 
 ## CSS Explanation
 
-The `style.css` file is used to control the appearance of the page. It styles each section of the website so that the layout looks clean and presentable.
+The `style.css` file is responsible for the visual appearance of the landing page.
 
 ### 1. Body Styling
 
-The body style:
-
-- Removes the default browser margin
-- Applies the `Arial, sans-serif` font family
-- Sets a light background color for the entire page
-
-This creates a simple base design for the webpage.
+The `body` selector removes default margin, sets the font to `Arial, sans-serif`, and applies a light background color. This creates a clean base for the full webpage.
 
 ### 2. Navbar Styling
 
-The navigation section uses:
+The `nav` section uses:
 
 - `display: flex`
 - `justify-content: space-between`
 - `align-items: center`
 
-These properties place the logo on one side and the menu links on the other side. The navbar also uses a dark background and white text for contrast.
+These properties arrange the logo and menu links in a horizontal row. The dark background color and white text improve visibility and contrast.
 
-### 3. Menu Link Styling
+The `.menu a` selector styles the navigation links by:
 
-The links inside the menu are styled to:
+- Removing underline with `text-decoration: none`
+- Setting the text color to white
+- Adding spacing between links using `margin-left`
 
-- Remove the default underline
-- Show white text color
-- Add spacing between each link
+### 3. Hero Section Styling
 
-This makes the navigation look cleaner and easier to read.
+The `.hero` class centers the content and gives it enough padding to create a spacious layout. The heading size is increased using `.hero h1`, and the paragraph color is softened with gray to improve readability.
 
-### 4. Hero Section Styling
+The `.btn` class styles the button with:
 
-The hero section is centered and uses generous padding so the content has enough space. The heading is made larger to stand out, while the paragraph uses a softer text color for readability.
+- Green background
+- White text
+- Padding for better click area
+- Rounded corners using `border-radius`
 
-### 5. Button Styling
+This makes the button stand out as a call-to-action element.
 
-The button uses:
+### 4. Cards Layout
 
-- Background color
-- Padding
-- White text color
-- Rounded corners
-- No underline
+The `.container` class uses Flexbox to place the cards side by side with spacing between them. This creates a neat horizontal layout.
 
-These styles make the button look like a proper call-to-action element.
-
-### 6. Card Container Styling
-
-The card section uses Flexbox to place the cards in a row. A gap is added between cards to improve spacing. This helps the layout look balanced and modern.
-
-### 7. Card Styling
-
-Each card is styled with:
+The `.card` class applies:
 
 - White background
 - Padding
 - Fixed width
 - Rounded corners
-- Centered text
-- Box shadow
+- Center-aligned text
+- Soft box shadow
 
-These styles help each content block stand out clearly from the background.
+These styles make each card look modern and visually separate from the page background.
 
-### 8. Footer Styling
+### 5. Footer Styling
 
-The footer is styled with:
+The `footer` uses a dark background with white text and centered alignment. This helps maintain consistency with the navigation bar and gives the page a balanced design.
 
-- Dark background color
-- White text color
-- Center alignment
-- Padding
+## Features of the Project
 
-This gives visual consistency with the navigation bar.
-
-## Concepts Covered
-
-This project helps in understanding the following front-end concepts:
-
-- HTML document structure
-- Semantic sectioning
-- Linking CSS to HTML
-- Navigation bar creation
-- Hero section design
-- Card-based content layout
-- Flexbox usage
-- Typography and spacing
-- Background and color styling
-- Basic webpage presentation
+- Simple and beginner-friendly landing page
+- Clean layout using only HTML and CSS
+- Navigation bar with menu links
+- Hero section with heading, text, and button
+- Three content cards for services/topics
+- Footer section for page completion
+- Use of Flexbox for alignment and spacing
 
 ## How to Run the Project
 
-1. Open the project folder.
-2. Open `index.html` in any web browser.
-3. The landing page will load directly without any installation.
+1. Download or clone the project folder.
+2. Open the folder in your code editor.
+3. Open `index.html` in any web browser.
 
-Since this project uses only HTML and CSS, no additional setup, package, or framework is required.
+No additional setup, framework, or installation is required because this project is built with only HTML and CSS.
 
-## Why This Project Is Useful
+## Learning Outcome
 
-This project is useful for beginners because it gives practical experience in building a complete webpage layout from scratch. It shows how HTML is used to organize webpage content and how CSS is used to improve design, readability, and user experience.
+By completing this task, the following concepts can be understood more clearly:
 
-## Demo Link
+- Basic webpage structure using HTML
+- Linking CSS with HTML
+- Creating sections like navbar, hero area, cards, and footer
+- Applying colors, spacing, typography, and alignment
+- Using Flexbox for simple layout design
 
-Demo Video:
-https://drive.google.com/file/d/144MfY0fmhhVBcQyIuch0CaEf0mlpwfUq/view?usp=sharing
+## Demo Video
+
+- https://drive.google.com/file/d/13W3UFM0jQZHfpVIcy26rqrVVvGSimpbF/view?usp=drive_link
 
 ## Conclusion
 
-This project is a basic but effective example of a landing page created with HTML and CSS. It demonstrates the core idea of front-end development by combining structure and styling in a simple, understandable way.
+This project is a good starting point for learning web development. It shows how HTML creates the structure of a webpage and how CSS improves the appearance and layout. The landing page is simple, readable, and useful for practicing core frontend concepts.
